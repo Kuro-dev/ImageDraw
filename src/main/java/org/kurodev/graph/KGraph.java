@@ -70,23 +70,27 @@ public class KGraph {
 
         //---- DRAW INTERVAL MARKERS ----
 
+        // Total number of intervals across the entire axis
+        int totalIntervals = options.getGraphPoints();
 
-        int totalIntervals = options.getGraphPoints() * 2 + 1; // Total number of intervals across the entire axis
         // Calculate the width of each interval across the full width of the axis
-        int intervalPixels = innerWidth / totalIntervals;
-        for (int i = 0; i < totalIntervals; i++) {
+        double intervalPixelsX = ((double) imageCenterX - startX) / totalIntervals;
+        for (int i = 1; i <= totalIntervals; i++) {
+            int xNegative = (int) Math.round(imageCenterX - (i * intervalPixelsX));
+            int xPositive = (int) Math.round(imageCenterX + (i * intervalPixelsX));
+            img.drawLine(xNegative, imageCenterY, xNegative, (int) (imageCenterY * 1.03), PixelColor.BLACK);
+            img.drawLine(xPositive, imageCenterY, xPositive, (int) (imageCenterY * 1.03), PixelColor.BLACK);
+        }
 
-            // Draw point lines across the entire axis
-            int xPos = (startX + (i * intervalPixels));
-            if (i == options.getGraphPoints() + 1) {
-                if (xPos == imageCenterX) {
-                    System.err.println("I MET THE CENTER!");
-                } else {
-                    System.out.printf("This should be the center at %d but was at %d%n", imageCenterX, xPos);
-                }
-            }
-
-            img.drawLine(xPos, imageCenterY, xPos, (int) (imageCenterY * 1.03), PixelColor.BLACK);
+        double intervalPixelsY = ((double) imageCenterY - startY) / totalIntervals;
+        for (int i = 1; i <= totalIntervals; i++) {
+            int yPositive = (int) Math.round(imageCenterY - (i * intervalPixelsY));
+            int yNegative = (int) Math.round(imageCenterY + (i * intervalPixelsY));
+            int offset = (int) (imageCenterX * (0.03 / 2));
+            double xPos1 = (imageCenterX + offset);
+            double xPos2 = (imageCenterX - offset - 1);
+            img.drawLine((int) xPos1, yPositive, (int) (xPos2), yPositive, PixelColor.BLACK);
+            img.drawLine((int) xPos1, yNegative, (int) (xPos2), yNegative, PixelColor.BLACK);
         }
 
         return img;
