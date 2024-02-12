@@ -53,7 +53,7 @@ public class DrawableImage {
         return Objects.hash(customChunks, png);
     }
 
-    public void drawLine(int x1, int y1, int x2, int y2, PixelColor color) {
+    public DrawableImage drawLine(int x1, int y1, int x2, int y2, PixelColor color) {
         int dx = Math.abs(x2 - x1);
         int dy = Math.abs(y2 - y1);
         int sx = x1 < x2 ? 1 : -1;
@@ -72,16 +72,18 @@ public class DrawableImage {
                 y1 += sy;
             }
         }
+        return this;
     }
 
-    public void drawRect(int x, int y, int dx, int dy, PixelColor color) {
+    public DrawableImage drawRect(int x, int y, int dx, int dy, PixelColor color) {
         drawLine(x, y, x + dx, y, color); //horizontal top line
         drawLine(x, y + dy, x + dx, y + dy, color); //horizontal bottom line
         drawLine(x, y, x, y + dy, color); //vertical left line
         drawLine(x + dx, y, x + dx, y + dy + 1, color); //vertical right line
+        return this;
     }
 
-    public void fillRect(int x, int y, int dx, int dy, PixelColor color) {
+    public DrawableImage fillRect(int x, int y, int dx, int dy, PixelColor color) {
         int xPos = x + dx;
         int yPos = y + dy;
         for (int writeX = x; writeX < xPos; writeX++) {
@@ -89,9 +91,10 @@ public class DrawableImage {
                 png.writeColor(writeX, writeY, color);
             }
         }
+        return this;
     }
 
-    public void fillCircle(int centerX, int centerY, int radius, PixelColor color) {
+    public DrawableImage fillCircle(int centerX, int centerY, int radius, PixelColor color) {
         int x = radius;
         int y = 0;
         int radiusError = 1 - x;
@@ -109,15 +112,17 @@ public class DrawableImage {
                 radiusError += 2 * (y - x + 1);
             }
         }
+        return this;
     }
 
-    public void drawCircle(int centerX, int centerY, int radius, PixelColor color) {
+    public DrawableImage drawCircle(int centerX, int centerY, int radius, PixelColor color) {
         double angleIncrement = 1.0 / radius;
         for (double angle = 0; angle < 2 * Math.PI; angle += angleIncrement) {
             int x = (int) Math.round(centerX + radius * Math.cos(angle));
             int y = (int) Math.round(centerY + radius * Math.sin(angle));
             png.writeColor(x, y, color);
         }
+        return this;
     }
 
     /**
@@ -180,7 +185,13 @@ public class DrawableImage {
     /**
      * Fills the entire image with a specific color.
      */
-    public void fill(PixelColor color) {
+    public DrawableImage fill(PixelColor color) {
         fillRect(0, 0, getPng().getWidth(), getPng().getHeight(), color);
+        return this;
+    }
+
+    public DrawableImage draw(int x, int y, PixelColor color) {
+        png.writeColor(x, y, color);
+        return this;
     }
 }

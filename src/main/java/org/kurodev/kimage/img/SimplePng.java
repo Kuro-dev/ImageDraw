@@ -62,7 +62,8 @@ public class SimplePng {
      */
     public void writeColor(int x, int y, int red, int green, int blue, int alpha) {
         if (x < 0 || y < 0 || x >= width || y >= height) {
-            throw new IllegalArgumentException("Coordinates out of bounds");
+            String msg = String.format("Coordinates out of bounds %dx%d for image of size %dx%d", x, y, width, height);
+            throw new IllegalArgumentException(msg);
         }
 
         int index = (y * width + x) * 4; // 4 bytes per pixel (RGBA)
