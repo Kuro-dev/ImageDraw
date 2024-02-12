@@ -2,6 +2,8 @@ package org.kurodev.kimage.img;
 
 import org.kurodev.kimage.util.DeflateCompression;
 import org.kurodev.kimage.util.Util;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -9,10 +11,10 @@ import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 import java.util.zip.CRC32;
 
 public class SimplePngEncoder {
+    private static final Logger logger = LoggerFactory.getLogger(SimplePngEncoder.class);
 
     private final Map<String, byte[]> customChunks;
     private final SimplePng simplePng;
@@ -66,10 +68,9 @@ public class SimplePngEncoder {
         byte[] idatData = processImageData(simplePng.getImageData());
         byte[] compressedIdatData = DeflateCompression.compress(idatData);
         writeChunk(baos, "IDAT", compressedIdatData);
-        System.out.println("Compressed image data from "
-                + Util.bytesToString(idatData.length)
-                + " to "
-                + Util.bytesToString(compressedIdatData.length));
+        logger.info("Compressed image data from {} to {}",
+                Util.bytesToString(idatData.length),
+                Util.bytesToString(compressedIdatData.length));
 
         // Write IEND chunk
         writeChunk(baos, "IEND", new byte[]{});
@@ -90,7 +91,7 @@ public class SimplePngEncoder {
     }
 
     private void writeChunk(ByteArrayOutputStream stream, String type, byte[] data) throws IOException {
-        System.out.println("Writing chunk: " + type + ", Length: " + Util.bytesToString(data.length));
+        logger.info("Writing chunk: {}, Length: {}", type, Util.bytesToString(data.length));
 
         ByteBuffer buffer = ByteBuffer.allocate(4 + 4 + data.length + 4);
         buffer.putInt(data.length);

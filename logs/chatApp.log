@@ -1,0 +1,316 @@
+[DEBUG] 2024-02-12 13:34:54 KGraph:50 - Drawing graph for 101 points
+[DEBUG] 2024-02-12 13:34:54 SimplePngEncoder:95 - Writing chunk: IHDR, Length: 13B
+[DEBUG] 2024-02-12 13:34:54 SimplePngEncoder:95 - Writing chunk: IDAT, Length: 16,89KB
+[DEBUG] 2024-02-12 13:34:54 SimplePngEncoder:95 - Writing chunk: IEND, Length: 0B
+[INFO ] 2024-02-12 13:51:08 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 13:51:08 Main:21 - Found settings file!
+[INFO ] 2024-02-12 13:51:34 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 13:51:34 Main:21 - Found settings file!
+[INFO ] 2024-02-12 13:51:34 MyDiscordBot:32 - starting discord bot
+[TRACE] 2024-02-12 13:51:35 RestRateLimiter:464 - Bucket uninit+GET/users/@me:n/a is running 1 requests
+[TRACE] 2024-02-12 13:51:35 Requester:182 - Executing request GET https://discord.com/api/v10/users/@me
+[TRACE] 2024-02-12 13:51:35 Requester:214 - Finished Request GET https://discord.com/api/v10/users/@me with code 200
+[DEBUG] 2024-02-12 13:51:35 Requester:224 - Received response with following cf-rays: [8544f6bfb8c062da-HAM]
+[DEBUG] 2024-02-12 13:51:35 RestRateLimiter:277 - Caching bucket hash GET/users/@me -> 78bb8553d9352a5a2f89f9def401287a
+[TRACE] 2024-02-12 13:51:35 RestRateLimiter:332 - Updated bucket 78bb8553d9352a5a2f89f9def401287a:n/a to (999/1000, 1)
+[INFO ] 2024-02-12 13:51:35 JDA:332 - Login Successful!
+[DEBUG] 2024-02-12 13:51:35 SessionControllerAdapter:79 - Creating new worker handle for shard pool 0
+[TRACE] 2024-02-12 13:51:35 SessionControllerAdapter:115 - Appending node to queue JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[DEBUG] 2024-02-12 13:51:35 SessionControllerAdapter:101 - Running worker
+[DEBUG] 2024-02-12 13:51:35 SessionControllerAdapter:154 - Running connect node for shard JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[TRACE] 2024-02-12 13:51:35 RestRateLimiter:464 - Bucket uninit+POST/applications/{application_id}/commands:n/a is running 1 requests
+[TRACE] 2024-02-12 13:51:35 Requester:182 - Executing request POST https://discord.com/api/v10/applications/1206571943386546208/commands
+[INFO ] 2024-02-12 13:51:35 WebSocketClient:431 - Connected to WebSocket
+[DEBUG] 2024-02-12 13:51:35 WebSocketClient:433 - Connected with gateway intents: 1100010011011011001101
+[DEBUG] 2024-02-12 13:51:35 WebSocketClient:752 - Sending Identify-packet...
+[TRACE] 2024-02-12 13:51:35 WebSocketClient:277 - <- {"op":2,"d":{"intents":3225293,"shard":[0,1],"presence":{"activities":[],"afk":false,"since":1707742295857,"status":"online"},"large_threshold":250,"properties":{"os":"Windows 10","browser":"JDA","device":"JDA"},"token":"MTIwNjU3MTk0MzM4NjU0NjIwOA.GqoVWT.0P0LrMSxpKP0LbxztTlGGYATErvxh5ezSp48HE"}}
+[TRACE] 2024-02-12 13:51:35 Decompressor:133 - Decompressing data [120, -38, 52, -55, 65, 10, -62, 48, 16, 5, -48, -69, -4, 117, 34, -119, 88, 23, 115, -107, -90, -108, 49, 29, -76, 18, -37, -110, 76, 43, 18, 114, 119, -35, -72, 123, -16, 42, 20, -76, -20, 41, 25, -108, 63, -42, 13, -28, -99, -63, 4, -86, 120, 8, 103, -67, 9, -21, 56, 47, 42, -7, -32, 4, -70, -8, 115, -9, -5, 81, 51, 71, 1, -11, -24, 3, -18, -84, -14, -26, -113, -35, -14, 100, -9, 98, -123, -117, 122, 27, -19, 85, -97, 93, -128, -87, 1, -81, 57, -26, -75, 4, -112, 59, -71, 54, 96, 104, -19, 11, 0, 0, -1, -1]
+[DEBUG] 2024-02-12 13:51:35 WebSocketClient:927 - Got HELLO packet (OP 10). Initializing keep-alive.
+[TRACE] 2024-02-12 13:51:35 WebSocketClient:277 - <- {"op":1,"d":0}
+[TRACE] 2024-02-12 13:51:35 Decompressor:133 - Decompressing data [-86, -58, 101, -73, 33, -40, 110, -112, 64, 45, 0, 0, 0, -1, -1]
+[TRACE] 2024-02-12 13:51:35 WebSocketClient:932 - Got Heartbeat Ack (OP 11).
+[TRACE] 2024-02-12 13:51:35 Requester:214 - Finished Request POST https://discord.com/api/v10/applications/1206571943386546208/commands with code 201
+[DEBUG] 2024-02-12 13:51:35 Requester:224 - Received response with following cf-rays: [8544f6c269ec62da-HAM]
+[DEBUG] 2024-02-12 13:51:35 RestRateLimiter:277 - Caching bucket hash POST/applications/{application_id}/commands -> d9825c191970ead7c158a4c613b27ce7
+[TRACE] 2024-02-12 13:51:35 RestRateLimiter:332 - Updated bucket d9825c191970ead7c158a4c613b27ce7:n/a to (4/5, 4000)
+[TRACE] 2024-02-12 13:51:36 Decompressor:133 - Decompressing data [-100, 85, 77, 111, -100, 48, 16, -3, 47, -100, -77, 9, 6, 12, 38, -73, 74, -119, -44, 115, 123, -86, -46, -56, -14, -62, 44, -72, 49, 54, -79, 77, -94, 52, -38, -1, -34, 49, 31, 77, 2, -69, 109, 85, -19, -59, 54, 111, -34, -68, -103, 121, -10, -114, -104, -24, -53, -19, -89, -101, 111, -47, 8, 35, 19, 102, -111, -9, 52, 73, 29, 28, 88, -18, -64, 123, -87, 27, 4, -67, 30, -89, -93, 17, 1, 86, 30, 36, 32, -38, -37, 1, -90, 115, 45, 58, -44, 29, 53, 86, -12, -19, 110, 111, 60, 82, 119, 7, -63, 65, -117, -67, 122, 67, 74, 92, 69, 36, -119, 115, 90, -112, 50, 75, 83, -106, -45, 44, 79, 98, -122, -24, 70, -103, -67, 80, 124, -30, -103, -108, 31, -108, 8, -87, 81, 12, 116, 66, -86, -27, -72, -106, -82, -78, -78, -109, 90, 120, -125, 122, -94, -94, 76, 74, 36, 8, 73, -25, 52, -30, 73, 120, 97, -25, 122, -79, -58, 86, 88, 76, 124, 23, 95, -112, 123, -36, -127, 115, -46, 104, -18, 95, -6, -96, 88, 27, -37, -31, 4, -34, -50, 71, -115, 44, -95, 52, -85, -85, -102, -26, 9, 10, -51, 11, 33, 112, 62, 116, 31, -17, -103, 72, -96, 102, -128, 120, 11, 110, -24, -128, -49, 83, -30, -125, 69, -127, -47, -77, 115, -41, 87, 87, -53, -28, -34, -90, 118, 25, 68, 27, 91, 95, 54, -51, 24, -86, -124, -57, 92, -82, -107, 61, 22, 120, -121, -86, 122, 43, 81, 52, -16, -86, 21, 90, -125, -6, 125, 10, 14, 116, 5, -13, -74, 25, -92, -86, -61, -6, 53, 26, 52, 22, 41, 85, -24, -18, -121, -26, -46, -94, -96, -116, 20, 69, 76, 9, -93, 121, -52, 72, 25, 29, -105, 72, -2, -61, 72, -51, 45, 60, 14, -32, -4, 66, 9, -122, -93, 46, -80, 80, 115, -21, 43, -4, -38, 4, 97, -63, -126, -42, 120, -76, 103, 45, 58, 84, 124, -80, 66, 63, 28, 6, -21, -33, -81, 119, -2, -39, -124, -58, 121, 83, 61, -76, 70, 5, 92, -121, -110, 116, -124, -68, -43, 96, 45, 104, -49, -107, -87, -58, 82, 3, -31, -51, 45, 34, 110, 110, -81, -65, 126, 14, 8, 49, -8, 118, -14, -107, -24, 123, 37, 23, -40, -21, -97, 76, 50, 59, -126, -91, -116, 97, 109, -57, -1, -66, 48, 57, 69, -6, -117, -17, 81, 37, -108, 10, 123, 12, -106, 53, -81, 44, 94, 74, -88, 87, 88, -62, -110, -20, 61, -12, -2, -120, -69, -59, 44, -54, -104, -121, -95, -25, 94, 118, -80, 10, 75, -109, -14, 111, 81, 7, -87, -91, 107, -73, 9, -13, 77, -32, -20, -98, -35, 76, -32, -58, 18, -109, 93, 18, -81, -21, 74, 112, -26, 31, -21, 114, 120, 19, 60, -97, 3, 87, 112, 74, 104, -74, -126, 47, -103, 68, 47, 119, 121, 81, -28, 69, 73, -53, 114, -41, 22, -113, 63, -117, 85, 112, 70, -13, 52, -3, 24, -36, -128, -25, -31, 49, 88, 33, -111, -122, -123, 42, -62, -25, -55, -62, 107, -86, -108, -26, 83, 127, 116, -51, 93, -123, 45, 25, -16, -47, -32, 53, 40, 8, -90, -32, 29, -86, 23, -51, -70, -61, 36, 25, 73, -73, -50, 94, -29, 2, 44, -72, -51, 88, -7, 19, 105, 101, -49, -79, 68, -77, 70, 101, -57, -5, -29, 52, -91, -48, 49, 124, -11, 38, -83, -120, -59, 11, 89, -7, 117, 77, 100, 51, -92, -27, -78, -14, -111, 96, 59, -42, 56, 43, -23, 38, 104, -22, -57, -103, 16, 86, -100, -61, -97, 22, -107, -100, -41, 116, 58, 32, 37, -23, 38, 100, 70, -98, 115, 103, 74, -74, -66, -34, -113, -115, -62, -37, 83, -65, 108, 76, -78, -27, 87, 32, -12, 73, 112, -68, -63, -102, 30, 111, 22, 14, -19, 31, -31, 14, -33, 17, 127, 18, -69, -102, -42, -8, 11, 127, -104, -65, 0, 0, 0, -1, -1]
+[TRACE] 2024-02-12 13:51:36 WebSocketClient:971 - READY -> {"guilds":[{"unavailable":true,"id":"577581770518560819"}],"auth":{},"guild_join_requests":[],"geo_ordered_rtc_regions":["rotterdam","frankfurt","frankfurt-two","stockholm","milan"],"session_id":"82554dcd56219467aa2505b0b8a2ed8e","resume_gateway_url":"wss://gateway-us-east1-c.discord.gg","user_settings":{},"relationships":[],"_trace":["[\"gateway-prd-us-east1-c-6tj5\",{\"micros\":65206,\"calls\":[\"id_created\",{\"micros\":1824,\"calls\":[]},\"session_lookup_time\",{\"micros\":329,\"calls\":[]},\"session_lookup_finished\",{\"micros\":16,\"calls\":[]},\"discord-sessions-prd-2-20\",{\"micros\":62560,\"calls\":[\"start_session\",{\"micros\":51540,\"calls\":[\"discord-api-677679599-h7qz7\",{\"micros\":45633,\"calls\":[\"get_user\",{\"micros\":7768},\"get_guilds\",{\"micros\":4356},\"send_scheduled_deletion_message\",{\"micros\":12},\"guild_join_requests\",{\"micros\":1},\"authorized_ip_coro\",{\"micros\":14}]}]},\"starting_guild_connect\",{\"micros\":71,\"calls\":[]},\"presence_started\",{\"micros\":10495,\"calls\":[]},\"guilds_started\",{\"micros\":87,\"calls\":[]},\"guilds_connect\",{\"micros\":2,\"calls\":[]},\"presence_connect\",{\"micros\":313,\"calls\":[]},\"connect_finished\",{\"micros\":319,\"calls\":[]},\"build_ready\",{\"micros\":45,\"calls\":[]},\"clean_ready\",{\"micros\":0,\"calls\":[]},\"optimize_ready\",{\"micros\":0,\"calls\":[]},\"split_ready\",{\"micros\":1,\"calls\":[]}]}]}]"],"presences":[],"application":{"flags":8388608,"id":"1206571943386546208"},"v":10,"private_channels":[],"shard":[0,1],"session_type":"normal","user":{"global_name":null,"bot":true,"verified":true,"flags":0,"mfa_enabled":true,"id":"1206571943386546208","avatar":null,"email":null,"username":"graph-bot","discriminator":"7929"},"current_location":["DE","DE:SH"]}
+[DEBUG] 2024-02-12 13:51:36 GuildSetupController:126 - Setting incomplete count to 1
+[DEBUG] 2024-02-12 13:51:36 GuildSetupController:377 - Starting 75 second timeout for 1 guilds
+[TRACE] 2024-02-12 13:51:36 GuildSetupController:133 - Adding id to setup cache 577581770518560819
+[TRACE] 2024-02-12 13:51:36 Decompressor:133 - Decompressing data [-20, 90, -37, -114, -29, -58, 17, -3, -107, -123, 30, 29, -53, -24, 27, -5, 50, 79, -119, -41, -122, 97, 36, 70, -116, 120, 54, 111, 11, -127, -110, -88, 29, 102, 36, 82, 17, -55, -103, 29, 7, -2, -9, -100, -22, -26, 85, 67, -115, -59, -39, -111, 12, 4, 121, 88, -84, 70, 98, 55, -5, -44, -87, -82, 58, 85, -35, 33, 25, -2, -16, -31, -57, -65, 125, -73, 120, -113, -100, 120, -5, 125, -56, -119, 98, -104, 19, 97, -58, 93, 90, -19, 22, -5, 67, -2, 9, 22, 45, 22, -53, -8, -48, -27, -74, 77, -68, 45, -110, -81, -37, -121, -118, 106, 73, 9, 106, -17, 93, 119, -107, 87, 89, -23, 39, 66, -56, -121, 115, 46, -14, 108, -103, 35, 29, -111, 127, 121, 111, 109, 82, 78, -56, 109, -69, 100, -73, 76, 14, 117, -120, -81, -45, -19, -119, -12, -70, -81, -106, -120, -102, -117, 46, 73, 78, 75, -82, -40, -24, -5, 45, -14, -42, -47, 119, 103, 101, 86, -20, 76, -20, 32, 31, -80, 23, 107, 124, -47, -116, 63, -54, -69, -121, 124, -21, 51, 87, 88, -108, 21, -46, 33, 55, 89, 35, 21, 19, 26, -45, 106, -82, 34, 33, -116, 101, -62, 8, -122, -27, 26, 61, -5, -40, -77, 98, -102, -83, -38, -123, -19, 17, 24, 96, -79, -42, -44, 89, -70, -70, 111, 77, 86, -107, 73, -5, 3, -59, 1, 108, -15, -104, 88, 21, 76, -88, 57, 19, 115, 46, 110, -71, -72, 81, -26, 70, -79, 111, 28, 87, -116, -79, 63, 49, 118, -61, -40, -84, -81, 48, -42, 73, -68, 105, 103, 89, -27, -69, 93, -107, -43, 41, 105, 1, -85, 120, -94, 23, 96, -78, 83, 33, 3, -84, 36, 43, 74, 68, 40, 40, 58, -4, -33, 37, -20, 6, 76, -103, 18, -107, 120, -51, 46, -2, -68, 120, 72, -41, 72, -70, 117, -94, -9, -15, -110, 28, 46, -14, 79, 111, -110, 3, 101, 98, -54, -102, -108, -40, 103, 73, 54, -1, -16, 11, 45, 20, -103, -87, 58, 52, -45, 18, 115, -59, 93, -77, -110, 83, 121, 63, -16, -103, 67, -83, 61, 45, -122, 35, 38, 90, 105, 27, -1, -6, -44, 56, 64, -15, 84, -108, -55, -82, 93, -67, 127, -73, 39, -110, 18, -123, -48, 74, -70, 72, -55, 48, -24, -16, -87, -29, 101, -99, 108, -30, 106, 91, 54, -111, 124, -111, -27, 37, 36, 100, 48, 112, -112, -96, -75, -121, -33, 87, -40, -80, -17, 126, 125, 76, 41, 13, 32, 14, -35, 39, -75, -110, -36, 38, 15, -55, -42, -37, 48, 72, 20, 60, -69, 78, 96, -79, 21, -91, 108, 60, 19, -81, -54, -12, 33, 45, -97, -6, 20, -112, -72, 56, -110, 80, -15, -26, 126, -80, -8, 96, -112, -58, 83, -67, -74, 45, -4, -20, 36, -127, -31, 2, -7, 58, 89, 36, -69, -4, 95, 105, -13, 104, 25, 55, 114, 120, -97, 23, 105, -39, 60, -69, 79, 14, -69, 52, 36, 103, 98, 35, 114, 90, 72, -51, -94, -56, 68, 66, -54, 89, 11, -17, -49, 9, -47, -111, 103, 30, 21, -12, 17, -98, 15, 18, -82, -74, -45, 46, -50, 96, -98, 46, -90, -100, -26, 22, 75, -53, -102, 53, -35, -27, 105, 81, -74, 99, 58, -89, 94, -27, 91, -38, -57, -20, -73, -81, 95, 9, -116, 63, 67, 70, 49, 5, -53, -47, -36, 116, -96, -66, 75, 30, -114, -31, 4, 103, 25, 69, 83, 111, 123, -19, -124, -127, -124, -80, -122, -87, 105, 104, -92, 82, -122, 49, -7, 106, 76, -18, 28, 72, 127, -127, 2, 40, -54, -23, -88, 12, 56, 55, 76, 48, -91, -19, 52, 84, 60, -94, -63, -38, -68, -98, 42, 126, 10, -105, -120, 58, 92, 127, -59, -10, -102, -30, 122, 35, 49, -6, 114, -82, 71, -119, 38, 68, 20, 99, -124, -112, 76, 65, 55, 34, -82, 88, -23, -124, -100, 13, -64, -38, 103, 88, -107, 18, 42, 98, 46, 18, 67, -84, -13, -11, 115, -33, 60, -58, -37, -85, -98, -4, 123, -123, 64, 121, -96, -104, 54, 8, 100, -47, -107, -32, 90, -63, -103, 97, -36, -31, -109, -118, -116, 99, 67, -72, -26, 24, -82, 18, 78, 57, 109, -92, -33, 59, 53, -36, -17, 127, -2, 101, -2, -19, -33, 111, 39, -96, -75, 92, 75, -58, -100, -122, 125, -107, -109, -54, 8, 115, -83, -72, -94, -113, 1, 1, 61, -41, -50, 106, 29, -79, -66, -69, -2, 28, -93, -98, -26, -113, 83, 60, 22, -110, -59, 70, -62, 50, -117, 125, 104, -80, 5, -72, -72, 22, -88, 104, 10, -88, 15, -39, 22, 66, 43, -92, -82, 105, -40, 32, -95, 0, 76, 65, -30, 57, -90, -81, -123, 77, 77, 34, -20, 85, -96, 120, -124, 57, 45, -36, -47, 94, 11, -108, -100, 2, 74, -66, 10, 20, -94, -104, -116, -96, -63, -91, -67, 74, 32, 113, 20, -90, -111, 90, 37, 51, 78, 41, 78, 89, 104, -128, 88, 28, 35, 22, -38, 42, 105, 35, -41, -117, 35, 63, -7, 18, -28, 39, -113, -118, -16, 126, -101, -105, 19, 98, -118, 67, -8, -108, -50, 73, 68, 21, 68, 39, -89, 25, -65, -102, 86, -103, -28, -94, 119, -109, -40, 4, 40, 88, -109, -77, 72, 67, -82, 68, 40, 103, -82, -61, 38, 52, 9, -14, 2, 68, 31, 99, 17, -14, -101, 85, -77, -105, 17, -125, -10, 94, -2, -85, 50, -108, -38, -17, 126, 60, -28, -53, 105, 12, -46, 91, -115, 49, -100, 83, -4, 116, -58, 125, -111, -38, 4, 3, -80, 90, 100, -92, -29, 66, -98, 11, -100, 115, -87, 34, -87, -107, -26, -106, 115, 35, -84, 82, -65, -117, -100, 75, -35, 33, -1, 71, -100, -83, -13, -35, -5, -69, 120, -94, -13, -122, -9, 34, 2, 9, 72, 39, -123, 127, -14, -117, -14, 63, 71, 6, 50, 10, -75, 47, -77, 54, 58, 27, -5, 72, 1, -1, 50, 118, -63, -107, 65, 101, -128, 21, 119, 22, 24, -12, -31, -49, 69, 63, 90, -91, 79, 66, -1, 49, 84, -72, -95, 22, 30, -83, 115, -23, -108, -93, -68, -93, 22, 77, 93, -112, -95, -52, -57, 115, 89, 89, 12, 58, 9, -7, 99, -106, 28, -126, 65, 16, 79, -84, -79, 26, -94, 8, 10, 93, 80, 9, -124, 85, 61, -28, 105, 104, -76, -107, 77, 97, -73, 78, -38, -90, 75, 51, 73, -14, -103, -6, -54, 105, 73, -51, -81, -110, -102, -47, -101, 116, 91, -42, -123, 120, 17, 111, 18, 20, -117, -88, -78, 15, 120, -11, 72, 69, 88, -95, 34, 28, -7, -66, -41, -85, -18, 125, 123, 84, 21, 55, 109, 106, 58, -72, 0, -41, -49, 43, -53, -90, -34, -4, 72, -43, -20, -65, -85, -12, 64, 13, -70, -83, -89, 51, 16, 82, -45, -72, -61, -6, -30, -39, 41, 109, -114, -40, -96, -104, 15, 77, 78, 98, -93, 106, 50, -52, -77, 83, -127, 56, 75, 119, -66, 68, 14, 99, 27, -118, -38, 70, -109, 64, 112, 97, 100, -112, -68, -54, -42, -66, 53, -75, -16, 31, -21, -27, -35, 85, -53, -6, -92, -92, -74, 41, -122, -83, -41, -44, 60, 8, -11, 118, -38, -32, 24, 28, 72, -44, -53, 92, -110, 57, 14, -51, -48, -34, -47, -58, -48, 26, 97, 126, 117, -78, -94, 94, 80, 15, -29, -15, -112, -74, 92, -41, -42, -71, 77, 62, -105, -17, -34, 55, -77, -98, 40, -106, 69, -65, -49, 115, 28, -121, -61, -101, -23, 67, -66, 79, 87, 45, -9, 116, 16, -29, -27, -39, 2, -117, 88, -124, 62, 28, 59, -103, 71, -121, -53, -5, 79, 55, -23, 11, -115, -103, 36, 123, 34, 1, -50, -80, -33, -100, -31, -44, 32, -120, -73, -37, -4, 17, -33, -111, -12, 63, -98, 99, -76, 10, -85, -25, 96, -67, -79, -35, 124, 68, -13, 62, -10, 39, 48, -89, -83, -110, 21, -101, -57, 35, -121, -13, -19, -105, 121, -78, -70, -89, -18, -117, -17, -30, 20, 48, 66, -102, -7, 19, 14, 108, -73, -35, 62, -76, -116, -8, -100, -87, -71, -112, -73, 92, -35, 8, 113, -61, 116, -81, 87, 84, 116, 93, -98, 38, -84, 40, 84, 24, 20, 93, -80, 124, 73, -46, -4, 36, 87, -4, 119, -71, 82, 103, -46, -48, 121, -55, 63, 41, 84, -100, 116, 19, -118, -8, -100, 49, -53, 94, 114, 19, 127, 22, -22, 29, -94, -73, 18, -68, -68, 59, 48, 59, -33, 117, 94, -10, -20, 49, -50, 6, 75, -84, 65, -3, -112, 96, 99, -7, 99, -53, 103, 6, 31, 105, 10, -74, 51, -16, 65, -49, 115, -103, -106, -76, 94, -108, 99, -44, -18, 123, -85, -67, -95, -50, -33, 27, -93, -83, -96, 17, -65, -122, 10, 114, 98, 108, 99, -68, -72, -71, 12, -73, -114, -60, -16, 121, -101, 107, -40, -71, 121, 97, 17, 71, 44, -7, -31, 82, 74, -24, 6, -95, 5, -110, 112, -113, -91, -8, 80, 62, -26, -121, -5, -47, 109, -127, 101, 67, 121, 43, 84, 7, 64, -128, 84, -81, -44, -84, -65, 32, 41, 52, 71, -23, 96, 20, -25, 86, 95, 32, -126, -55, -55, 44, -99, 109, -96, 75, -78, 116, -74, -85, 76, 96, -119, 68, -39, 41, -102, 122, -101, -87, -90, -59, 25, -102, 6, -86, 92, -23, 105, -63, -118, -65, 81, -50, -72, -112, 91, -65, -123, -59, 107, -125, 22, 101, -75, -39, 12, -67, -7, -56, -14, 111, -19, -51, -45, -125, -22, 48, 17, -122, 117, 63, 38, -37, 85, -66, 75, 78, 101, 49, 18, -57, 8, -108, -111, -80, 22, -63, 52, -76, 6, 79, 30, 127, -100, -117, 112, -10, 85, 17, 111, 43, 44, -11, -85, -39, 57, 64, -7, 23, 2, 125, -98, -15, 63, -123, 76, 50, -121, 58, 43, -57, 3, -107, -124, 3, 72, -123, 42, 90, -94, 22, 113, -127, -64, 14, 56, 42, 52, -108, -41, 112, 2, 97, 35, 121, 1, 106, -93, 43, 6, -86, 63, 34, 31, 77, 8, 84, 123, -70, 91, 115, 82, -109, 113, 55, 103, -42, 107, 50, 119, 35, -51, -115, 96, -33, 88, -51, -121, -57, 120, -57, -44, -46, -53, -108, 19, 81, 68, 93, 13, 37, -123, 28, -8, 52, 124, -35, 41, 27, 89, 41, 25, -9, 93, -44, -73, -90, 86, -1, -17, 71, -60, 115, -87, 69, 57, -106, 20, -93, 28, 1, -78, 66, -127, -89, -99, -77, 80, 113, 80, 11, 98, -56, -111, 114, 90, 71, -44, 112, -109, -111, -67, 0, 71, -26, 77, -28, 106, -119, 74, -19, -92, 7, -38, 8, 101, -117, -118, 16, 89, 44, -109, -68, -113, -50, 42, 23, 113, -6, -51, -94, -10, -71, -124, 10, -78, 127, -120, 7, -66, 62, -66, 92, 80, -85, -122, -94, 127, -66, -85, 10, 24, 112, -100, 42, -48, -31, 19, -97, 2, 45, 80, 66, -3, 60, 96, 52, -68, 80, 35, -32, 32, 65, 24, -33, 109, 125, 107, -86, -36, -1, 5, 107, 67, 85, -70, 78, -70, -30, 124, -56, 17, -98, 20, 14, 99, 20, -29, -128, 111, 116, 91, 106, -121, 95, 16, 35, -100, 113, -122, 51, -25, 46, -63, 17, 103, 23, -88, -3, -104, 80, 19, 41, -14, 67, 94, 74, -78, 47, -119, 64, 24, 55, 46, 78, 9, 33, -87, -104, -127, -42, -117, -104, 50, 70, -102, -74, 98, -93, 95, -124, -42, -110, 59, 58, -128, -31, 74, 94, 34, 18, 115, -2, 38, 34, 55, 52, -2, -26, -95, -93, 120, -104, 83, 11, -75, 26, -57, -21, 79, 61, -80, -123, 56, -4, 69, 25, 33, -76, -100, -11, 15, 121, 12, -77, -66, 79, -52, -116, 113, -125, -40, -4, -79, -67, -101, 86, -19, -41, -44, -96, 29, 105, -93, 62, -60, 25, -35, -43, -87, 14, -37, 5, -107, 95, 109, -95, -75, 10, 23, 123, 98, -61, 53, 83, -79, -38, -84, 55, 50, 114, -52, 46, -115, 91, 39, 74, 106, -101, 108, -16, -121, -65, -18, -45, -21, -61, -46, 117, -83, 56, 91, -121, -69, 118, -11, -71, 16, 41, -35, -34, -99, -95, -94, 76, 87, -9, -31, 98, 29, 53, 53, -95, -14, 23, 119, 73, -68, -18, -102, -109, -63, 44, -51, 117, 61, 4, -101, 112, -55, -67, 126, 67, 55, 17, -35, 31, 34, -35, -107, 87, 120, 76, 82, -29, -76, 119, -44, 97, 44, 76, 13, -57, 22, -36, 54, 87, -82, -69, -37, -84, -104, 34, 43, -37, -90, 55, -3, -111, -45, -59, -84, -10, -122, 125, 88, 71, 80, -24, -95, 85, -5, -37, 127, 1, 0, 0, -1, -1]
+[TRACE] 2024-02-12 13:51:36 WebSocketClient:971 - GUILD_CREATE -> {"max_stage_video_channel_users":50,"preferred_locale":"en-US","unavailable":false,"owner_id":"223878679061725185","system_channel_id":"614527959264395430","rules_channel_id":null,"features":[],"embedded_activities":[],"afk_channel_id":null,"members":[{"premium_since":null,"nick":null,"joined_at":"2024-02-12T12:47:40.914000+00:00","communication_disabled_until":null,"roles":["1206582397588734026","614522780272033876"],"pending":false,"flags":0,"deaf":false,"mute":false,"avatar":null,"user":{"global_name":null,"bot":true,"avatar_decoration_data":null,"public_flags":0,"id":"1206571943386546208","avatar":null,"display_name":null,"username":"graph-bot","discriminator":"7929"}}],"voice_states":[],"stickers":[],"stage_instances":[],"id":"577581770518560819","hub_type":null,"nsfw_level":0,"safety_alerts_channel_id":null,"latest_onboarding_question_id":null,"large":false,"application_command_counts":{},"premium_subscription_count":0,"public_updates_channel_id":null,"application_id":null,"version":1678820614218,"joined_at":"2024-02-12T12:47:40.914000+00:00","home_header":null,"verification_level":0,"explicit_content_filter":0,"channels":[{"permission_overwrites":[],"name":"Text Channels","flags":0,"position":0,"id":"577581770518560820","type":4,"version":0},{"last_pin_timestamp":"2021-04-23T14:22:06+00:00","nsfw":true,"rate_limit_per_user":0,"flags":0,"type":0,"version":0,"permission_overwrites":[{"allow":"0","deny":"805829713","id":"577581770518560819","type":0},{"allow":"805829713","deny":"0","id":"614522780272033876","type":0}],"last_message_id":"1204392120627232808","parent_id":"577581770518560820","name":"kuros-eckchen","topic":null,"position":2,"id":"577581770518560821"},{"permission_overwrites":[],"name":"Voice Channels","flags":0,"position":2,"id":"577581771345100800","type":4,"version":0},{"rate_limit_per_user":0,"flags":0,"bitrate":64000,"user_limit":0,"type":2,"version":0,"rtc_region":null,"permission_overwrites":[],"last_message_id":null,"parent_id":"577581771345100800","name":"General","position":0,"id":"577581771345100801"},{"permission_overwrites":[{"allow":"121920","deny":"0","id":"614522769274568704","type":0},{"allow":"0","deny":"871890769","id":"577581770518560819","type":0},{"allow":"121920","deny":"0","id":"614522776057020468","type":0}],"last_message_id":"817438435258138644","rate_limit_per_user":0,"parent_id":"614523335392624640","name":"artwork","flags":0,"topic":null,"position":4,"id":"614523261035741186","type":0,"version":0},{"permission_overwrites":[{"allow":"121920","deny":"0","id":"614522776057020468","type":0},{"allow":"0","deny":"871890769","id":"577581770518560819","type":0},{"allow":"121920","deny":"0","id":"614522769274568704","type":0}],"last_message_id":null,"rate_limit_per_user":0,"parent_id":"614523335392624640","name":"codework","flags":0,"topic":null,"position":3,"id":"614523297333510146","type":0,"version":0},{"permission_overwrites":[{"allow":"0","deny":"871890769","id":"577581770518560819","type":0},{"allow":"121920","deny":"0","id":"614522776057020468","type":0},{"allow":"121920","deny":"0","id":"614522769274568704","type":0}],"name":"stuff","flags":0,"position":1,"id":"614523335392624640","type":4,"version":0},{"permission_overwrites":[],"last_message_id":"1206582400528810005","rate_limit_per_user":0,"parent_id":"577581770518560820","name":"welcome","flags":0,"topic":null,"position":0,"id":"614527959264395430","type":0,"version":0},{"permission_overwrites":[],"last_message_id":"832743465032089640","nsfw":true,"rate_limit_per_user":0,"parent_id":"577581770518560820","name":"general-chat","flags":0,"topic":"*salutes*","position":1,"id":"614528110251212853","type":0,"version":0},{"permission_overwrites":[{"allow":"121920","deny":"0","id":"614522776057020468","type":0},{"allow":"121920","deny":"0","id":"614522769274568704","type":0},{"allow":"0","deny":"871890769","id":"577581770518560819","type":0}],"last_message_id":"614549255704543235","last_pin_timestamp":"2019-08-23T19:37:20.861000+00:00","rate_limit_per_user":0,"parent_id":"614523335392624640","name":"plan","flags":0,"topic":null,"position":5,"id":"614540094858330112","type":0,"version":0},{"permission_overwrites":[{"allow":"0","deny":"871890769","id":"577581770518560819","type":0},{"allow":"121920","deny":"0","id":"614522776057020468","type":0},{"allow":"121920","deny":"0","id":"614522769274568704","type":0}],"last_message_id":"705441969983455252","rate_limit_per_user":0,"parent_id":"614523335392624640","name":"memes","flags":0,"topic":null,"position":6,"id":"614540496659939358","type":0,"version":0},{"permission_overwrites":[],"last_message_id":"614585058459648031","rate_limit_per_user":0,"parent_id":"577581771345100800","name":"text","flags":0,"topic":null,"position":7,"id":"614584951584587806","type":0,"version":0},{"permission_overwrites":[{"allow":"0","deny":"871890769","id":"577581770518560819","type":0},{"allow":"121920","deny":"0","id":"614522769274568704","type":0},{"allow":"121920","deny":"0","id":"614522776057020468","type":0}],"last_message_id":"618491000544952320","rate_limit_per_user":0,"parent_id":"614523335392624640","name":"sounds-music","flags":0,"topic":null,"position":8,"id":"614766656861896725","type":0,"version":0},{"permission_overwrites":[{"allow":"121920","deny":"0","id":"614522776057020468","type":0},{"allow":"0","deny":"871890769","id":"577581770518560819","type":0},{"allow":"121920","deny":"0","id":"614522769274568704","type":0}],"last_message_id":"624629539401760768","rate_limit_per_user":0,"parent_id":"614523335392624640","name":"ideen","flags":0,"topic":null,"position":9,"id":"624629358979710995","type":0,"version":0},{"permission_overwrites":[{"allow":"1024","deny":"0","id":"614522769274568704","type":0},{"allow":"0","deny":"1024","id":"577581770518560819","type":0}],"last_message_id":"832340752750477374","rate_limit_per_user":0,"parent_id":"577581770518560820","name":"ideas","flags":0,"topic":null,"position":10,"id":"832326631992721438","type":0,"version":0},{"permission_overwrites":[],"last_message_id":"932240571710472263","rate_limit_per_user":0,"parent_id":"577581770518560820","name":"member-manager-status","flags":0,"topic":null,"position":11,"id":"932237085887307796","type":0,"version":0}],"name":"kuros zwischenecke","mfa_level":0,"region":"deprecated","default_message_notifications":1,"lazy":true,"roles":[{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{},"permissions":"559623605575233","managed":false,"name":"@everyone","mentionable":false,"position":0,"id":"577581770518560819"},{"color":3447003,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{},"permissions":"6546775617","managed":false,"name":"Dev","mentionable":true,"position":10,"id":"614522769274568704"},{"color":15277667,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{},"permissions":"6546775617","managed":false,"name":"Artist","mentionable":true,"position":9,"id":"614522776057020468"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{},"permissions":"6546775625","managed":false,"name":"Kuro","mentionable":false,"position":11,"id":"614522780272033876"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{"bot_id":"772230476827983923"},"permissions":"6442450952","managed":true,"name":"Kuro-dev","mentionable":false,"position":8,"id":"772232265240674305"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{"bot_id":"778210701977845790"},"permissions":"4294967304","managed":true,"name":"EPS-BOT","mentionable":false,"position":7,"id":"816300963924934727"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{},"permissions":"1071698665025","managed":false,"name":"Pass:1w","mentionable":false,"position":6,"id":"929852808570765412"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{},"permissions":"1071698665025","managed":false,"name":"Pass:Unlimited","mentionable":false,"position":5,"id":"929855880764194906"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{},"permissions":"1071698665025","managed":false,"name":"Pass:1d","mentionable":false,"position":4,"id":"929855881510780968"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{},"permissions":"1071698665025","managed":false,"name":"Pass:3d","mentionable":false,"position":3,"id":"929855882303520838"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{"bot_id":"927207693079441468"},"permissions":"268438594","managed":true,"name":"MemberManagementBot","mentionable":false,"position":2,"id":"932239939633049601"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{},"permissions":"1071698665025","managed":false,"name":"Pass:1h","mentionable":false,"position":1,"id":"932241410567045120"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":0,"hoist":false,"tags":{"bot_id":"956121018500542484"},"permissions":"3072","managed":true,"name":"uncle Irobot","mentionable":false,"position":1,"id":"956127771107659799"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":1690565739123,"hoist":false,"tags":{"bot_id":"1134536461811728444"},"permissions":"3136","managed":true,"name":"RandomChatBot","mentionable":false,"position":1,"id":"1134539682546454635"},{"color":0,"unicode_emoji":null,"icon":null,"flags":0,"version":1707742060885,"hoist":false,"tags":{"bot_id":"1206571943386546208"},"permissions":"2147518464","managed":true,"name":"graph-bot","mentionable":false,"position":1,"id":"1206582397588734026"}],"icon":"da71604a4fdf35908b79de4368ef08bd","description":null,"guild_scheduled_events":[],"afk_timeout":300,"presences":[],"activity_instances":{},"max_members":250000,"max_video_channel_users":25,"member_count":9,"emojis":[{"managed":false,"roles":[],"name":"malea","available":true,"animated":false,"id":"621040322419359765","version":0,"require_colons":true}],"nsfw":false,"vanity_url_code":null,"premium_progress_bar_enabled":false,"incidents_data":null,"system_channel_flags":8,"threads":[],"banner":null,"inventory_settings":null,"soundboard_sounds":[],"discovery_splash":null,"premium_tier":0,"splash":null}
+[TRACE] 2024-02-12 13:51:36 GuildSetupController:147 - Received guild create for id: 577581770518560819 available: true
+[TRACE] 2024-02-12 13:51:36 GuildSetupController:61 - [577581770518560819] Updated status INIT->BUILDING
+[TRACE] 2024-02-12 13:51:36 EntityBuilder:572 - Loading member Member:graph-bot(id=1206571943386546208, user=SelfUser:graph-bot(id=1206571943386546208), guild=Guild:kuros zwischenecke(id=577581770518560819))
+[DEBUG] 2024-02-12 13:51:36 EntityBuilder:357 - Finished setup for guild with a null owner. GuildId: 577581770518560819 OwnerId: 223878679061725185
+[INFO ] 2024-02-12 13:51:36 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 13:51:36 MyDiscordBot:51 - Discord bot successfully started
+[TRACE] 2024-02-12 13:51:36 GuildSetupController:61 - [577581770518560819] Updated status BUILDING->READY
+[DEBUG] 2024-02-12 13:51:36 GuildSetupController:381 - Finished setup for guild 577581770518560819 firing cached events 0
+[DEBUG] 2024-02-12 13:51:58 RestRateLimiter:199 - Removed 4 expired buckets
+[TRACE] 2024-02-12 13:51:58 SessionControllerAdapter:122 - Removing node from queue JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[INFO ] 2024-02-12 13:52:00 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 13:52:00 Main:21 - Found settings file!
+[INFO ] 2024-02-12 13:52:00 MyDiscordBot:32 - starting discord bot
+[INFO ] 2024-02-12 13:52:00 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 13:52:01 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 13:52:01 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 13:52:01 MyDiscordBot:51 - Discord bot successfully started
+[INFO ] 2024-02-12 13:52:50 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 13:52:50 Main:21 - Found settings file!
+[INFO ] 2024-02-12 13:52:50 MyDiscordBot:32 - starting discord bot
+[INFO ] 2024-02-12 13:52:51 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 13:52:51 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 13:52:51 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 13:52:51 MyDiscordBot:51 - Discord bot successfully started
+[INFO ] 2024-02-12 13:54:30 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 13:54:30 Main:21 - Found settings file!
+[INFO ] 2024-02-12 13:54:30 MyDiscordBot:32 - starting discord bot
+[INFO ] 2024-02-12 13:54:31 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 13:54:31 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 13:54:31 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 13:54:31 MyDiscordBot:56 - Discord bot successfully started
+[INFO ] 2024-02-12 13:54:50 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 13:54:50 Main:21 - Found settings file!
+[INFO ] 2024-02-12 13:54:50 MyDiscordBot:32 - starting discord bot
+[INFO ] 2024-02-12 13:54:51 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 13:54:51 MyDiscordBot:42 - Graph command exists
+[INFO ] 2024-02-12 13:54:51 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 13:54:51 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 13:54:51 MyDiscordBot:58 - Discord bot successfully started
+[INFO ] 2024-02-12 13:55:23 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 13:55:23 Main:21 - Found settings file!
+[INFO ] 2024-02-12 13:55:23 MyDiscordBot:32 - starting discord bot
+[INFO ] 2024-02-12 13:55:24 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 13:55:25 MyDiscordBot:42 - Graph command exists
+[INFO ] 2024-02-12 13:55:25 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 13:55:25 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 13:55:25 MyDiscordBot:61 - Discord bot successfully started
+[INFO ] 2024-02-12 13:59:29 MyDiscordBot:50 - SlashCommandInteractionEvent(id=1206585367042719744)
+[INFO ] 2024-02-12 14:00:21 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:00:21 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:00:21 MyDiscordBot:32 - starting discord bot
+[INFO ] 2024-02-12 14:00:21 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:00:22 MyDiscordBot:42 - Graph command exists
+[INFO ] 2024-02-12 14:00:22 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:00:22 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:00:22 MyDiscordBot:55 - Discord bot successfully started
+[INFO ] 2024-02-12 14:00:46 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:00:46 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:00:46 MyDiscordBot:32 - starting discord bot
+[INFO ] 2024-02-12 14:00:47 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:00:47 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:00:47 MyDiscordBot:42 - Graph command exists
+[INFO ] 2024-02-12 14:00:48 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:00:48 MyDiscordBot:55 - Discord bot successfully started
+[INFO ] 2024-02-12 14:11:51 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:11:51 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:11:51 MyDiscordBot:40 - starting discord bot
+[INFO ] 2024-02-12 14:11:52 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:11:52 MyDiscordBot:49 - Graph command exists
+[INFO ] 2024-02-12 14:11:52 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:11:52 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:11:52 MyDiscordBot:89 - Discord bot successfully started
+[INFO ] 2024-02-12 14:13:14 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:13:14 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:13:14 MyDiscordBot:40 - starting discord bot
+[INFO ] 2024-02-12 14:13:15 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:13:15 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:13:15 MyDiscordBot:49 - Graph command exists
+[INFO ] 2024-02-12 14:13:16 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:13:16 MyDiscordBot:90 - Discord bot successfully started
+[INFO ] 2024-02-12 14:14:07 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:14:07 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:14:07 MyDiscordBot:40 - starting discord bot
+[INFO ] 2024-02-12 14:14:08 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:14:08 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:14:08 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:14:08 MyDiscordBot:81 - Discord bot successfully started
+[INFO ] 2024-02-12 14:14:38 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:14:38 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:14:38 MyDiscordBot:40 - starting discord bot
+[INFO ] 2024-02-12 14:14:39 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:14:39 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:14:39 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:14:39 MyDiscordBot:81 - Discord bot successfully started
+[INFO ] 2024-02-12 14:15:50 SimplePngEncoder:94 - Writing chunk: IHDR, Length: 13B
+[INFO ] 2024-02-12 14:15:50 SimplePngEncoder:94 - Writing chunk: IDAT, Length: 4,75KB
+[INFO ] 2024-02-12 14:15:50 SimplePngEncoder:71 - Compressed image data from 977,05KB to 4,75KB
+[INFO ] 2024-02-12 14:15:50 SimplePngEncoder:94 - Writing chunk: IEND, Length: 0B
+[ERROR] 2024-02-12 14:15:50 RestAction:51 - RestAction queue returned failure
+java.lang.IllegalStateException: This interaction has already been acknowledged or replied to. You can only reply or acknowledge an interaction once!
+	at net.dv8tion.jda.internal.requests.restaction.interactions.InteractionCallbackImpl.tryAck(InteractionCallbackImpl.java:57)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.InteractionCallbackImpl.queue(InteractionCallbackImpl.java:64)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:572)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:538)
+	at org.kurodev.discord.MyDiscordBot.onSlashCommandInteraction(MyDiscordBot.java:75)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:442)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handleInternally(EventManagerProxy.java:88)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:70)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:176)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleCommand(InteractionCreateHandler.java:126)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleInternally(InteractionCreateHandler.java:97)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:39)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:1014)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:900)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:878)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:1053)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+[INFO ] 2024-02-12 14:16:51 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:16:51 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:16:51 MyDiscordBot:40 - starting discord bot
+[INFO ] 2024-02-12 14:16:52 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:16:52 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:16:52 MyDiscordBot:49 - Graph command exists
+[INFO ] 2024-02-12 14:16:52 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:16:52 MyDiscordBot:91 - Discord bot successfully started
+[INFO ] 2024-02-12 14:17:08 SimplePngEncoder:94 - Writing chunk: IHDR, Length: 13B
+[INFO ] 2024-02-12 14:17:08 SimplePngEncoder:94 - Writing chunk: IDAT, Length: 4,71KB
+[INFO ] 2024-02-12 14:17:08 SimplePngEncoder:71 - Compressed image data from 977,05KB to 4,71KB
+[INFO ] 2024-02-12 14:17:08 SimplePngEncoder:94 - Writing chunk: IEND, Length: 0B
+[INFO ] 2024-02-12 14:24:04 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:24:04 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:24:04 MyDiscordBot:43 - starting discord bot
+[INFO ] 2024-02-12 14:24:05 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:24:05 MyDiscordBot:52 - Graph command exists
+[INFO ] 2024-02-12 14:24:05 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:24:06 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:24:06 MyDiscordBot:105 - Discord bot successfully started
+[INFO ] 2024-02-12 14:28:49 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:28:49 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:28:49 MyDiscordBot:43 - starting discord bot
+[INFO ] 2024-02-12 14:28:49 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:28:50 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:28:50 MyDiscordBot:57 - updating command
+[INFO ] 2024-02-12 14:28:50 MyDiscordBot:60 - Graph command exists
+[INFO ] 2024-02-12 14:28:50 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:28:50 MyDiscordBot:113 - Discord bot successfully started
+[INFO ] 2024-02-12 14:28:58 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:28:58 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:28:58 MyDiscordBot:43 - starting discord bot
+[INFO ] 2024-02-12 14:28:59 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:28:59 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:28:59 MyDiscordBot:57 - updating command
+[INFO ] 2024-02-12 14:28:59 MyDiscordBot:60 - Graph command exists
+[INFO ] 2024-02-12 14:28:59 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:28:59 MyDiscordBot:113 - Discord bot successfully started
+[INFO ] 2024-02-12 14:35:16 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:35:16 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:35:16 MyDiscordBot:43 - starting discord bot
+[INFO ] 2024-02-12 14:35:17 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:35:17 MyDiscordBot:61 - Graph command exists
+[INFO ] 2024-02-12 14:35:17 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:35:18 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:35:18 MyDiscordBot:114 - Discord bot successfully started
+[INFO ] 2024-02-12 14:36:53 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:36:53 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:36:53 MyDiscordBot:43 - starting discord bot
+[INFO ] 2024-02-12 14:36:54 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:36:54 MyDiscordBot:55 - Version mismatch local undefined != remove 1206589186266628217
+[INFO ] 2024-02-12 14:36:54 MyDiscordBot:60 - Graph command exists
+[INFO ] 2024-02-12 14:36:54 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:36:55 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:36:55 MyDiscordBot:120 - Discord bot successfully started
+[INFO ] 2024-02-12 14:37:39 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:37:39 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:37:39 MyDiscordBot:45 - starting discord bot
+[INFO ] 2024-02-12 14:37:40 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:37:40 MyDiscordBot:57 - Version mismatch local undefined != remove 1206589186266628217
+[INFO ] 2024-02-12 14:37:40 MyDiscordBot:62 - Graph command exists
+[INFO ] 2024-02-12 14:37:40 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:37:41 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:37:41 MyDiscordBot:122 - Discord bot successfully started
+[INFO ] 2024-02-12 14:39:39 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:39:39 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:39:39 MyDiscordBot:44 - starting discord bot
+[INFO ] 2024-02-12 14:39:40 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:39:40 MyDiscordBot:56 - Version mismatch local undefined != remove 1206589186266628217
+[INFO ] 2024-02-12 14:39:40 MyDiscordBot:61 - Graph command exists
+[INFO ] 2024-02-12 14:39:40 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:39:40 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:39:40 MyDiscordBot:121 - Discord bot successfully started
+[INFO ] 2024-02-12 14:40:33 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:40:33 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:40:33 MyDiscordBot:44 - starting discord bot
+[INFO ] 2024-02-12 14:40:34 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:40:34 MyDiscordBot:56 - Version mismatch local undefined != remove 1206589186266628217
+[INFO ] 2024-02-12 14:40:34 MyDiscordBot:61 - Graph command exists
+[INFO ] 2024-02-12 14:40:34 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:40:35 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:40:35 MyDiscordBot:121 - Discord bot successfully started
+[INFO ] 2024-02-12 14:41:06 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:41:06 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:41:06 MyDiscordBot:44 - starting discord bot
+[INFO ] 2024-02-12 14:41:07 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:41:07 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:41:07 MyDiscordBot:56 - Version mismatch local undefined != remove 1206589186266628217
+[INFO ] 2024-02-12 14:41:07 MyDiscordBot:61 - Graph command exists
+[INFO ] 2024-02-12 14:41:07 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:41:07 MyDiscordBot:121 - Discord bot successfully started
+[INFO ] 2024-02-12 14:41:10 MyDiscordBot:123 - Shutting down
+[INFO ] 2024-02-12 14:41:18 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:41:18 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:41:18 MyDiscordBot:44 - starting discord bot
+[INFO ] 2024-02-12 14:41:19 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:41:20 MyDiscordBot:56 - Version mismatch local undefined != remove 1206589186266628217
+[INFO ] 2024-02-12 14:41:20 MyDiscordBot:61 - Graph command exists
+[INFO ] 2024-02-12 14:41:20 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:41:20 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:41:20 MyDiscordBot:121 - Discord bot successfully started
+[INFO ] 2024-02-12 14:41:23 MyDiscordBot:123 - Shutting down
+[INFO ] 2024-02-12 14:42:26 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:42:26 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:42:26 MyDiscordBot:46 - starting discord bot
+[INFO ] 2024-02-12 14:42:26 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:42:27 MyDiscordBot:58 - Version mismatch local undefined != remove 1206589186266628217
+[INFO ] 2024-02-12 14:42:27 MyDiscordBot:63 - Graph command exists
+[INFO ] 2024-02-12 14:42:27 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:42:27 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:42:27 MyDiscordBot:123 - Discord bot successfully started
+[INFO ] 2024-02-12 14:42:33 MyDiscordBot:125 - Shutting down
+[INFO ] 2024-02-12 14:43:24 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:43:24 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:43:24 MyDiscordBot:46 - starting discord bot
+[INFO ] 2024-02-12 14:43:25 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:43:25 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:43:40 MyDiscordBot:58 - Version mismatch local undefined != remove 1206589186266628217
+[INFO ] 2024-02-12 14:43:40 MyDiscordBot:63 - Graph command exists
+[INFO ] 2024-02-12 14:45:53 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:45:53 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:45:53 MyDiscordBot:43 - starting discord bot
+[INFO ] 2024-02-12 14:45:53 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:45:53 MyDiscordBot:46 - Registering graph command
+[INFO ] 2024-02-12 14:45:54 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:45:54 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:45:54 MyDiscordBot:98 - Discord bot successfully started
+[INFO ] 2024-02-12 14:45:55 MyDiscordBot:100 - Shutting down
+[INFO ] 2024-02-12 14:48:25 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:48:25 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:48:25 MyDiscordBot:43 - starting discord bot
+[INFO ] 2024-02-12 14:48:26 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:48:26 MyDiscordBot:46 - Registering graph command
+[INFO ] 2024-02-12 14:48:26 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:48:26 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:48:26 MyDiscordBot:98 - Discord bot successfully started
+[INFO ] 2024-02-12 14:49:56 MyDiscordBot:100 - Shutting down
+[INFO ] 2024-02-12 14:50:09 Main:19 - Looking for settings file
+[INFO ] 2024-02-12 14:50:09 Main:21 - Found settings file!
+[INFO ] 2024-02-12 14:50:09 MyDiscordBot:43 - starting discord bot
+[INFO ] 2024-02-12 14:50:10 JDA:332 - Login Successful!
+[INFO ] 2024-02-12 14:50:10 MyDiscordBot:46 - Registering graph command
+[INFO ] 2024-02-12 14:50:11 WebSocketClient:431 - Connected to WebSocket
+[INFO ] 2024-02-12 14:50:11 JDA:211 - Finished Loading!
+[INFO ] 2024-02-12 14:50:11 MyDiscordBot:99 - Discord bot successfully started
+[INFO ] 2024-02-12 14:51:28 SimplePngEncoder:94 - Writing chunk: IHDR, Length: 13B
+[INFO ] 2024-02-12 14:51:28 SimplePngEncoder:94 - Writing chunk: IDAT, Length: 4,75KB
+[INFO ] 2024-02-12 14:51:28 SimplePngEncoder:71 - Compressed image data from 977,05KB to 4,75KB
+[INFO ] 2024-02-12 14:51:28 SimplePngEncoder:94 - Writing chunk: IEND, Length: 0B
+[INFO ] 2024-02-12 14:51:33 MyDiscordBot:101 - Shutting down

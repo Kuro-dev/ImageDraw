@@ -4,6 +4,8 @@ import org.kurodev.calculator.maths.Calculation;
 import org.kurodev.calculator.maths.FormulaParser;
 import org.kurodev.kimage.draw.DrawableImage;
 import org.kurodev.kimage.img.PixelColor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -11,6 +13,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class KGraph {
+    private static final Logger logger = LoggerFactory.getLogger(KGraph.class);
     private final GraphOptions options;
 
     public KGraph() {
@@ -44,6 +47,7 @@ public class KGraph {
     }
 
     public DrawableImage createGraph(List<GraphPoint> points) {
+        logger.debug("Drawing graph for {} points", points.size());
         int width = options.getImageWidth();
         int height = options.getImageHeight();
         DrawableImage img = new DrawableImage(width, height);
