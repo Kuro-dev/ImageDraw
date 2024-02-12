@@ -1,6 +1,7 @@
 #others
 *.png
 settings.ini
+/logs
 
 #project files
 target/
