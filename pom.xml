@@ -53,6 +53,11 @@
         <version>1.7.5</version>
     </dependency>
     <dependency>
+        <groupId>org.reflections</groupId>
+        <artifactId>reflections</artifactId>
+        <version>0.10.2</version>
+    </dependency>
+    <dependency>
         <groupId>org.kurodev</groupId>
         <artifactId>ini-reader</artifactId>
         <version>1.1.1</version>

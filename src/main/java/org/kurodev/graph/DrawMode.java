@@ -12,6 +12,11 @@ public enum DrawMode {
         drawLines = lines;
     }
 
+    @Override
+    public String toString() {
+        return name().replace("_", " ").toLowerCase();
+    }
+
     public boolean drawPoints() {
         return drawPoints;
     }
