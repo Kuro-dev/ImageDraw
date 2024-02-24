@@ -1,4 +1,4 @@
-package org.kurodev.kimage.util;
+package org.kurodev.graph.kimage.kimage.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

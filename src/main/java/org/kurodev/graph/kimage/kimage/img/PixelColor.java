@@ -1,4 +1,4 @@
-package org.kurodev.kimage.img;
+package org.kurodev.graph.kimage.kimage.img;
 
 public class PixelColor {
     public static final PixelColor BLACK = new PixelColor(0, 0, 0);

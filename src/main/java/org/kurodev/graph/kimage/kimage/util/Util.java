@@ -1,4 +1,4 @@
-package org.kurodev.kimage.util;
+package org.kurodev.graph.kimage.kimage.util;
 
 public class Util {
     private static final double KILOBYTE = 1024;

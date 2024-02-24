@@ -1,7 +1,7 @@
-package org.kurodev.kimage.img;
+package org.kurodev.graph.kimage.kimage.img;
 
-import org.kurodev.kimage.draw.DrawableImage;
-import org.kurodev.kimage.util.DeflateCompression;
+import org.kurodev.graph.kimage.kimage.util.DeflateCompression;
+import org.kurodev.graph.kimage.kimage.draw.DrawableImage;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

@@ -1,8 +1,8 @@
 package org.kurodev;
 
 import org.junit.jupiter.api.Test;
-import org.kurodev.kimage.draw.DrawableImage;
-import org.kurodev.kimage.img.PixelColor;
+import org.kurodev.graph.kimage.kimage.draw.DrawableImage;
+import org.kurodev.graph.kimage.kimage.img.PixelColor;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -37,4 +37,10 @@ public class GraphTests {
                 .setMode(DrawMode.LINES);
         Files.write(Path.of("./img.png"), graph.createGraph("(0.5x^2)-5").encode());
     }
+
+    @Test
+    public void calculatingGraphPointsWithSmallFractionsShouldWork() {
+        KGraph graph = new KGraph();
+        graph.calculatePoints("0.09x^3");
+    }
 }

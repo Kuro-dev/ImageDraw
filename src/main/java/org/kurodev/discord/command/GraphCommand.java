@@ -13,7 +13,7 @@ import org.kurodev.discord.MarkDown;
 import org.kurodev.graph.DrawMode;
 import org.kurodev.graph.GraphPoint;
 import org.kurodev.graph.KGraph;
-import org.kurodev.kimage.draw.DrawableImage;
+import org.kurodev.graph.kimage.kimage.draw.DrawableImage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -85,14 +85,19 @@ public class GraphCommand extends AbstractDiscordCommand {
         OptionMapping reqEquation = event.getInteraction().getOption(EQUATION);
         if (reqEquation != null) {
             String equation = reqEquation.getAsString();
-            List<GraphPoint> points = graph.calculatePoints(equation);
-            String msg = createValueString(printValues, points);
-            DrawableImage img = graph.createGraph(points);
-            logger.info("Drawing {}x{} image using: {}", size, size, drawMode);
-            event.getInteraction().reply("Graph for " + MarkDown.CODE_BLOCK.wrap(equation))
-                    .addContent(MarkDown.CODE_BLOCK.wrap(msg))
-                    .addFiles(FileUpload.fromData(img.encode(), "graph.png"))
-                    .queue();
+            try {
+                List<GraphPoint> points = graph.calculatePoints(equation);
+                String msg = createValueString(printValues, points);
+                DrawableImage img = graph.createGraph(points);
+                logger.info("Drawing {}x{} image using: {}", size, size, drawMode);
+                event.getInteraction().reply("Graph for " + MarkDown.CODE_BLOCK.wrap(equation))
+                        .addContent(MarkDown.CODE_BLOCK.wrap(msg))
+                        .addFiles(FileUpload.fromData(img.encode(), "graph.png"))
+                        .queue();
+            } catch (Exception e) {
+                event.getInteraction().reply("Failed to calculate graph for " + MarkDown.CODE.wrap(equation) + ": " + e.getMessage()).queue();
+            }
+
         } else {
             event.getInteraction().reply("Equation missing").queue();
         }

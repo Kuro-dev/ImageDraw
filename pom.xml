@@ -20,11 +20,6 @@
         <version>5.9.1</version>
         <scope>test</scope>
     </dependency>
-    <dependency>
-        <groupId>kurodev</groupId>
-        <artifactId>smart-calculator</artifactId>
-        <version>1.0.4</version>
-    </dependency>
     <!--TELEGRAM-->
     <dependency>
         <groupId>org.telegram</groupId>

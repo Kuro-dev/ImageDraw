@@ -1,7 +1,7 @@
-package org.kurodev.kimage.img;
+package org.kurodev.graph.kimage.kimage.img;
 
-import org.kurodev.kimage.util.DeflateCompression;
-import org.kurodev.kimage.util.Util;
+import org.kurodev.graph.kimage.kimage.util.DeflateCompression;
+import org.kurodev.graph.kimage.kimage.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

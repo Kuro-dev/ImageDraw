@@ -8,12 +8,7 @@ import net.dv8tion.jda.api.events.interaction.command.CommandAutoCompleteInterac
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.session.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.dv8tion.jda.api.interactions.commands.OptionMapping;
-import net.dv8tion.jda.api.utils.FileUpload;
 import org.kurodev.discord.command.AbstractDiscordCommand;
-import org.kurodev.graph.DrawMode;
-import org.kurodev.graph.KGraph;
-import org.kurodev.kimage.draw.DrawableImage;
 import org.reflections.Reflections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

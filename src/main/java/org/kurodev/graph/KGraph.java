@@ -1,9 +1,8 @@
 package org.kurodev.graph;
 
-import org.kurodev.calculator.maths.Calculation;
-import org.kurodev.calculator.maths.FormulaParser;
-import org.kurodev.kimage.draw.DrawableImage;
-import org.kurodev.kimage.img.PixelColor;
+import org.kurodev.graph.calculator.Calculator;
+import org.kurodev.graph.kimage.kimage.draw.DrawableImage;
+import org.kurodev.graph.kimage.kimage.img.PixelColor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,16 +27,18 @@ public class KGraph {
         double points = options.getGraphPoints();
         double step = options.getGraphSteps();
         List<GraphPoint> calculatedPoints = new ArrayList<>((int) ((points * 2) / step));
-        FormulaParser parser = new FormulaParser();
-        for (double x = -points; x <= points; x += step) {
-            parser.getVariables().put("x", BigDecimal.valueOf(x));
-            Calculation calc = parser.calculate(formula);
-            if (calc.isNumber()) {
-                calculatedPoints.add(new GraphPoint(x, calc.getResult().doubleValue()));
-            } else {
-                throw new RuntimeException(calc.toString());
+        Calculator calculator = new Calculator();
+        try {
+            for (double x = -points; x <= points; x += step) {
+                calculator.getVariables().put("x", BigDecimal.valueOf(x));
+                BigDecimal calc = calculator.evaluate(formula);
+                calculatedPoints.add(new GraphPoint(x, calc.doubleValue()));
             }
+        } catch (Exception e) {
+            logger.error("Error when trying to calculate", e);
+            throw new RuntimeException("Invalid expression: " + formula);
         }
+
         return calculatedPoints;
     }
 
@@ -114,8 +115,8 @@ public class KGraph {
                 lastY = imgY;
             }
             if (drawPoints) {
-                img.drawLine(imgX + lineSize, imgY, imgX - lineSize - 1, imgY, PixelColor.BLACK);
-                img.drawLine(imgX, imgY + lineSize, imgX, imgY - lineSize - 1, PixelColor.BLACK);
+                img.drawLine(imgX + lineSize, imgY, Math.max(imgX - lineSize - 1, 0), imgY, PixelColor.BLACK);
+                img.drawLine(imgX, imgY + lineSize, imgX, Math.max(imgY - lineSize - 1, 0), PixelColor.BLACK);
             }
         }
 

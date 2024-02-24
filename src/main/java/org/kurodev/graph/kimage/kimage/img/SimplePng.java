@@ -1,4 +1,4 @@
-package org.kurodev.kimage.img;
+package org.kurodev.graph.kimage.kimage.img;
 
 import java.util.Arrays;
 import java.util.Objects;

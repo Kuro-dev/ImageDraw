@@ -1,6 +1,6 @@
-package org.kurodev.kimage.draw;
+package org.kurodev.graph.kimage.kimage.draw;
 
-import org.kurodev.kimage.img.*;
+import org.kurodev.graph.kimage.kimage.img.*;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
